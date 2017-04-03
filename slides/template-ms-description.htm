@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///Users/emorlock/Github-projects/reveal.js/Demm-teiHeader.html#/38 -->
+<html class=" js no-mobile desktop no-ie chrome chrome56 users-section emorlock-section github-projects-section reveal.js-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded w-1264 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 lt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape" id="demm-teiheader-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to the teiHeader</title>
+
+		<link rel="stylesheet" href="./template-ms-description_files/reveal.css">
+		<link rel="stylesheet" href="./template-ms-description_files/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="./template-ms-description_files/atom-one-dark.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script><link rel="stylesheet" type="text/css" href="./template-ms-description_files/paper.css"><script type="text/javascript" src="./template-ms-description_files/marked.js"></script><script type="text/javascript" src="./template-ms-description_files/markdown.js"></script><script type="text/javascript" src="./template-ms-description_files/notes.js"></script><script type="text/javascript" src="./template-ms-description_files/highlight.js"></script>
+	</head>
+	<body>
+		<div class="reveal slide center ready" data-transition-speed="default" data-background-transition="fade" role="application">
+			<div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.954514);">
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h2 id="introduction-to-the-teiheader">Introduction to the teiHeader</h2>
+<p>Emmanuelle Morlock (CNRS, Lyon)</p>
+<p><a href="http://twitter.com/emma_morlock">@emma_morlock</a></p>
+</section>
+				<!-- =1=================== -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h2 id="outline">Outline</h2>
+<ul>
+<li>metadata ?</li>
+<li>overview of the teiHeader</li>
+<li>main tags for manuscript description</li>
+<li>exercices</li>
+</ul>
+</section>
+				<!-- =2=================== -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h2 id="metadata">Metadata</h2>
+<ul>
+<li>"data about data"</li>
+<li>not actual text contents, rather like a library catalogue record or a page title of a book</li>
+<li>3 general types:<ul>
+<li>descriptive</li>
+<li>structural</li>
+<li>administrative </li>
+</ul>
+</li>
+<li>can be more or less formalized                </li>
+</ul>
+</section>
+				<!-- =3=================== -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h2 id="what-are-they-useful-for-">What are they useful for?</h2>
+<ul>
+<li><p>supports the <strong>identification</strong>, <strong>retrieval</strong>, <strong>use</strong>, <strong>re-use</strong>,
+  <strong>management</strong>, and <strong>preservation</strong> of information resources</p>
+</li>
+<li><p>increases the <strong>informational value</strong> of an object</p>
+</li>
+<li>when controlled by <strong>standards</strong>, supports <strong>interoperability</strong> and data exchange</li>
+<li>can describe a <strong>collection</strong>, a <strong>single resource</strong>, or a <strong>component</strong> part of a larger resource</li>
+</ul>
+</section>
+				<!-- =4=================== -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="two-different-user-goals-in-mind">Two different user goals in mind</h3>
+<ul>
+<li>the librairian's goal: <pre><code class="hljs haml">  -<span class="ruby"> how to identify <span class="hljs-keyword">and</span> describe <span class="hljs-string">"electronic publications"</span>
+</span>  -<span class="ruby"> =&gt; preferance for structured data
+</span></code></pre></li>
+<li>the scientific editor's goal: <pre><code class="hljs haml">  -<span class="ruby"> how to document encoding practices <span class="hljs-keyword">and</span> cwork with digital resources
+</span>  -<span class="ruby"> =&gt; combinaision of very fine grained tagging and loose descriptions 
+</span></code></pre></li>
+</ul>
+</section>
+				<!-- ====contents================ -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="strucural-main-parts">Strucural main parts</h3>
+<ul>
+<li><span style="color:blue"><code>&lt;fileDesc&gt;</code></span>: bibliographic description of an electronic file</li>
+<li><span style="color:blue"><code>&lt;encodingDesc&gt;</code></span>: documents choices in the realm of editorial decisions</li>
+<li><span style="color:blue"><code>&lt;profileDesc&gt;</code></span>: non-bibliographic aspects of the text (e.g. languages used)</li>
+<li><span style="color:blue"><code>&lt;revisionDesc&gt;</code></span>: version history of the file itself </li>
+<li>more recent: <span style="color:blue"><code>&lt;xenoData&gt;</code></span>: <ul>
+<li>non TEI structured information (Dublin Core, EAD, MARCXML, MODS, OAI...)</li>
+</ul>
+</li>
+</ul>
+</section>
+				
+				<!-- =5=================== -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">					
+					<h3>a minimal header</h3>
+					<pre><code data-trim="" class="hljs pf"><span class="hljs-variable">&lt;teiheader&gt;</span>
+  <span class="hljs-variable">&lt;filedesc&gt;</span>
+    <span class="hljs-variable">&lt;titlestmt&gt;</span>
+      <span class="hljs-variable">&lt;title&gt;</span>A title?<span class="hljs-variable">&lt;/title&gt;</span>
+    <span class="hljs-variable">&lt;/titlestmt&gt;</span>
+    <span class="hljs-variable">&lt;publicationstmt&gt;</span>
+      <span class="hljs-variable">&lt;p&gt;</span>Who published?<span class="hljs-variable">&lt;/p&gt;</span>
+    <span class="hljs-variable">&lt;/publicationstmt&gt;</span>
+    <span class="hljs-variable">&lt;sourcedesc&gt;</span>
+      <span class="hljs-variable">&lt;p&gt;</span>Where <span class="hljs-keyword">from</span>?<span class="hljs-variable">&lt;/p&gt;</span>
+    <span class="hljs-variable">&lt;/sourcedesc&gt;</span>
+  <span class="hljs-variable">&lt;/filedesc&gt;</span>
+<span class="hljs-variable">&lt;/teiheader&gt;</span> </code></pre>			
+				</section>
+				<!-- =§===types of content================ -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="types-of-contents-in-the-teiheader">types of contents in the teiHeader</h3>
+<ul>
+<li>free prose</li>
+<li>specialized groups of elements for structured info</li>
+<li>declarations (e.g. <code>&lt;refsDecl&gt;</code>)</li>
+<li>descriptions (e.g. <code>&lt;projectDesc&gt;</code>)<ul>
+<li>=&gt; two conflicting desires:<ul>
+<li>preserve the traditional free prose descriptions</li>
+<li>structure fine grained data chuncks in a 'database manner'</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+				
+				<!-- ====filedesc================ -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-filedesc-"><code>&lt;fileDesc&gt;</code></h3>
+<ul>
+<li><p><span style="color:red">mandatory</span> elements:</p>
+<ul>
+<li><code>&lt;titleStmt&gt;</code></li>
+<li><code>&lt;publicationStmt&gt;</code></li>
+<li><code>&lt;sourceDesc&gt;</code></li>
+</ul>
+</li>
+<li><p><span style="color:red">optional</span> elements:</p>
+<ul>
+<li><code>&lt;editionStmt&gt;</code></li>
+<li><code>&lt;serieStmt&gt;</code></li>
+<li><code>&lt;extent&gt;</code></li>
+<li><code>&lt;notesStmt&gt;</code></li>
+</ul>
+</li>
+</ul>
+</section>
+				<!-- =!===titleStmt example================ -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<h3>&lt;titleStmt&gt; example</h3>
+					<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">titlestmt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Letter to my Children<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">author</span> <span class="hljs-attr">xml:id</span>=<span class="hljs-string">"STC"</span>&gt;</span>Samuel Taylor Coleman<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">editor</span> <span class="hljs-attr">xml:id</span>=<span class="hljs-string">"JL"</span>&gt;</span>John Lingus<span class="hljs-tag">&lt;/<span class="hljs-name">editor</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">principal</span>&gt;</span>Mark Owen<span class="hljs-tag">&lt;/<span class="hljs-name">principal</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">respstmt</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">resp</span>&gt;</span>First encoding<span class="hljs-tag">&lt;/<span class="hljs-name">resp</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Isabelle Basle<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">respstmt</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">titlestmt</span>&gt;</span>						</span></code></pre>
+				</section>
+				
+				<!-- =!===sourceDesc ================ -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-sourcedesc-"><code>&lt;sourceDesc&gt;</code></h3>
+<ul>
+<li>possible structures:<ul>
+<li><strong>prose description</strong>: <span style="color:blue"><code>&lt;p&gt;</code></span></li>
+<li><strong>bibliographic description</strong>: <span style="color:blue"><code>&lt;bibl&gt;</code></span>, <span style="color:blue"><code>&lt;biblStruct&gt;</code></span>...</li>
+<li><strong>specialized elements</strong>: <span style="color:blue"><code>&lt;msDesc&gt;</code></span>...</li>
+<li><strong>authority lists</strong>: <span style="color:blue"><code>&lt;listPerson&gt;</code></span>, <span style="color:blue"><code>&lt;listPlace&gt;</code></span>...</li>
+</ul>
+</li>
+</ul>
+</section>
+				<!-- -->
+				<!-- =!===sourceDesc example================ -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<h3>&lt;sourceDesc&gt; example 1</h3>
+					<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">sourcedesc</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">scriptstmt</span> <span class="hljs-attr">xml:id</span>=<span class="hljs-string">"CNN12"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">bibl</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>CNN Network News<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>News headlines<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">date</span> <span class="hljs-attr">when</span>=<span class="hljs-string">"1991-06-12"</span>&gt;</span>12 Jun 91<span class="hljs-tag">&lt;/<span class="hljs-name">date</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">bibl</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">scriptstmt</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">sourcedesc</span>&gt;</span></span></code></pre>
+				</section>	
+				
+				<!-- =!===sourceDesc example 2================ -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<h3>&lt;sourceDesc&gt; example 2</h3>
+					<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">sourcedesc</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">biblstruct</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">analytic</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- For article-level information --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Author of source<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title of source<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">analytic</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">monogr</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- For monograph-level information --&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Author of source<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title of source<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">imprint</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">pubplace</span>&gt;</span>Place of publication of source<span class="hljs-tag">&lt;/<span class="hljs-name">pubplace</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">publisher</span>&gt;</span>Name of publisher of source<span class="hljs-tag">&lt;/<span class="hljs-name">publisher</span>&gt;</span>
+       <span class="hljs-comment">&lt;!-- Date of publication of source --&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">date</span> <span class="hljs-attr">when</span>=<span class="hljs-string">"2004-02-28"</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">date</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">imprint</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">monogr</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">citedrange</span> <span class="hljs-attr">from</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">unit</span>=<span class="hljs-string">"pp"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">citedrange</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">biblstruct</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">sourcedesc</span>&gt;</span></span></code></pre>
+				</section>
+				
+				
+				<!-- ====encodingDesc================ -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-encodingdesc-"><code>&lt;encodingDesc&gt;</code></h3>
+<ul>
+<li>encoding processes, choices, editiorial choices, conventions, categorization</li>
+<li>prose or specialized elements:<ul>
+<li><span style="color:blue"><code>&lt;projectDesc&gt;</code></span>: goals or motives of the project</li>
+<li><span style="color:blue"><code>&lt;editorialDecl&gt;</code></span>: editorial principles</li>
+<li><span style="color:blue"><code>&lt;classDecl&gt;</code></span>: classification sytems </li>
+<li><span style="color:blue"><code>&lt;tagDecl&gt;</code></span>: structured info about the usage of particular elements</li>
+</ul>
+</li>
+</ul>
+</section>
+				<!-- =!===encodingDesc example================ -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<h3>&lt;encodingDesc&gt; example 1</h3>
+					<pre><code data-trim="" class="hljs pf"><span class="hljs-variable">&lt;encodingdesc&gt;</span>
+  <span class="hljs-variable">&lt;projectdesc&gt;</span>
+   <span class="hljs-variable">&lt;p&gt;</span>Originally prepared <span class="hljs-keyword">for</span> use <span class="hljs-keyword">in</span> the production of a series of old-spelling
+       concordances <span class="hljs-keyword">in</span> <span class="hljs-number">1968</span>, this text was extensively checked and revised <span class="hljs-keyword">for</span> use during the
+       editing of the new Oxford Shakespeare (Wells and Taylor, <span class="hljs-number">1989</span>).<span class="hljs-variable">&lt;/p&gt;</span>
+  <span class="hljs-variable">&lt;/projectdesc&gt;</span>
+  <span class="hljs-variable">&lt;editorialdecl&gt;</span>
+   <span class="hljs-variable">&lt;correction&gt;</span>
+    <span class="hljs-variable">&lt;p&gt;</span>Turned letters are silently corrected.<span class="hljs-variable">&lt;/p&gt;</span>
+   <span class="hljs-variable">&lt;/correction&gt;</span>
+   <span class="hljs-variable">&lt;normalization&gt;</span>
+    <span class="hljs-variable">&lt;p&gt;</span>Original spelling and typography is retained, except that long s and ligatured
+         forms are not encoded.<span class="hljs-variable">&lt;/p&gt;</span>
+   <span class="hljs-variable">&lt;/normalization&gt;</span>
+  <span class="hljs-variable">&lt;/editorialdecl&gt;</span>  
+ <span class="hljs-variable">&lt;/encodingdesc&gt;</span></code></pre>
+				</section>
+				
+				<!-- =!===encodingDesc example 2================ -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<h3>&lt;encodingDesc&gt; example 2</h3>
+					<pre><code data-trim="" class="hljs pf"><span class="hljs-variable">&lt;encodingdesc&gt;</span>
+  <span class="hljs-variable">&lt;projectdesc&gt;</span>
+   <span class="hljs-variable">&lt;p&gt;</span>Originally prepared <span class="hljs-keyword">for</span> use <span class="hljs-keyword">in</span> the production of a series of old-spelling
+       concordances <span class="hljs-keyword">in</span> <span class="hljs-number">1968</span>, this text was extensively checked and revised <span class="hljs-keyword">for</span> use during the
+       editing of the new Oxford Shakespeare (Wells and Taylor, <span class="hljs-number">1989</span>).<span class="hljs-variable">&lt;/p&gt;</span>
+  <span class="hljs-variable">&lt;/projectdesc&gt;</span>
+  <span class="hljs-variable">&lt;editorialdecl&gt;</span>
+   <span class="hljs-variable">&lt;correction&gt;</span>
+    <span class="hljs-variable">&lt;p&gt;</span>Turned letters are silently corrected.<span class="hljs-variable">&lt;/p&gt;</span>
+   <span class="hljs-variable">&lt;/correction&gt;</span>
+   <span class="hljs-variable">&lt;normalization&gt;</span>
+    <span class="hljs-variable">&lt;p&gt;</span>Original spelling and typography is retained, except that long s and ligatured
+         forms are not encoded.<span class="hljs-variable">&lt;/p&gt;</span>
+   <span class="hljs-variable">&lt;/normalization&gt;</span>
+  <span class="hljs-variable">&lt;/editorialdecl&gt;</span>  
+ <span class="hljs-variable">&lt;/encodingdesc&gt;</span></code></pre>
+				</section>
+				
+				<!-- =!===profileDesc ================ -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-profiledesc-"><code>&lt;profileDesc&gt;</code></h3>
+<ul>
+<li>non bibliographic descriptions of the text 'profile' </li>
+<li><span style="color:blue"><code>&lt;langUsage&gt;</code></span>: languages or writing systems used in the text</li>
+<li><span style="color:blue"><code>&lt;textClass&gt;</code></span>: indexation in reference to a standard classification system</li>
+<li><span style="color:blue"><code>&lt;particDesc&gt;</code></span>: information about the 'participants' (persons) cited or depicted in the text</li>
+<li><span style="color:blue"><code>&lt;creation&gt;</code></span>: details of a text's creation, e.g. the date and place it was composed</li>
+</ul>
+</section>
+				<!-- -->
+				<!-- =!===profileDesc example================ -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<h3>&lt;profileDesc&gt; example </h3>
+					<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">profiledesc</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">creation</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">date</span>&gt;</span>1774<span class="hljs-tag">&lt;/<span class="hljs-name">date</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">creation</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">langusage</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">language</span> <span class="hljs-attr">ident</span>=<span class="hljs-string">"en"</span> <span class="hljs-attr">usage</span>=<span class="hljs-string">"100"</span>&gt;</span>English.<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">langusage</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">textclass</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">keywords</span> <span class="hljs-attr">scheme</span>=<span class="hljs-string">"#lcsh"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">term</span>&gt;</span>Political science<span class="hljs-tag">&lt;/<span class="hljs-name">term</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">term</span>&gt;</span>United States -- Politics and government —
+         Revolution, 1775-1783<span class="hljs-tag">&lt;/<span class="hljs-name">term</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">keywords</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">textclass</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">profiledesc</span>&gt;</span></span></code></pre>
+				</section>	
+				
+				<!-- =!===revisionDesc ================ -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-revisiondesc-"><code>&lt;revisionDesc&gt;</code></h3>
+<ul>
+<li>very important: provides a journal of the main updates in the encoding</li>
+<li>list of:<ul>
+<li><span style="color:blue"><code>&lt;change&gt;</code></span> @when, @who</li>
+</ul>
+</li>
+<li>can contain tags:<ul>
+<li><code>&lt;persName&gt;</code></li>
+<li><code>&lt;date&gt;</code> @when</li>
+</ul>
+</li>
+</ul>
+</section>
+				<!-- -->
+				<!-- =!===revisionDesc example================ -->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<h3>&lt;revisionDesc&gt; example </h3>
+					<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">revisiondesc</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">listchange</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">change</span> <span class="hljs-attr">when</span>=<span class="hljs-string">"1991-11-11"</span> <span class="hljs-attr">who</span>=<span class="hljs-string">"#LB"</span>&gt;</span> deleted chapter 10 <span class="hljs-tag">&lt;/<span class="hljs-name">change</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">change</span> <span class="hljs-attr">when</span>=<span class="hljs-string">"1991-11-02"</span> <span class="hljs-attr">who</span>=<span class="hljs-string">"#MSM"</span>&gt;</span> completed first draft <span class="hljs-tag">&lt;/<span class="hljs-name">change</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">listchange</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">revisiondesc</span>&gt;</span></span></code></pre></section>
+				
+				<!-- =!===MsDesc================ -->
+				<!-- =!=================== -->
+				<!-- ms Desc -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-msdesc-"><code>&lt;msDesc&gt;</code></h3>
+<ul>
+<li>Manuscripts:<ul>
+<li><strong>unique objects</strong> sometimes presenting complex features and with a great cultural value</li>
+<li>require <strong>'customized' descriptions</strong> (vs standardized conventions used modern printed books)</li>
+<li>The recording of the <strong>physical aspect</strong> of the object and its <strong>history</strong> rely on various distinctions that need a flexible schema</li>
+<li>used to record all kinds of text bearing objects (inscriptions, papyrii, etc.)</li>
+<li>can also be used in the <code>&lt;text&gt;</code> element ('catalogue raisonné').    </li>
+</ul>
+</li>
+</ul>
+</section>	
+						
+				<!-- ms Identifier -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-msidentifier-"><code>&lt;msIdentifier&gt;</code></h3>
+<ul>
+<li><strong>place</strong>: <code>&lt;country&gt;</code>, <code>&lt;settelment&gt;</code>, ... </li>
+<li><strong>repository</strong> (museum, library): <code>&lt;institution&gt;</code>, <code>&lt;repository&gt;</code>, ... </li>
+<li><strong>identification</strong>: <code>&lt;idno&gt;</code>, <code>&lt;collection&gt;</code>, <code>&lt;altIdentifier&gt;</code>             </li>
+</ul>
+</section>
+				<!-- msIdentifier example-->
+				<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					
+					<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">msidentifier</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">country</span>&gt;</span>France<span class="hljs-tag">&lt;/<span class="hljs-name">country</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">settlement</span>&gt;</span>Paris<span class="hljs-tag">&lt;/<span class="hljs-name">settlement</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">repository</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">"fr"</span>&gt;</span>Bibliothèque nationale de France. Réserve des livres rares&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">repository</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">idno</span>&gt;</span>RES P- YC- 1275<span class="hljs-tag">&lt;/<span class="hljs-name">idno</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">altidentifier</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">idno</span>&gt;</span>Y. 1341<span class="hljs-tag">&lt;/<span class="hljs-name">idno</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">note</span>&gt;</span>Cote de la Bibliothèque royale au XVIIIe s. (Catalogue de 1750).<span class="hljs-tag">&lt;/<span class="hljs-name">note</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">altidentifier</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">msidentifier</span>&gt;</span></span></code></pre>
+				</section>
+<!-- msContents -->
+				<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-mscontents-"><code>&lt;msContents&gt;</code></h3>
+<ul>
+<li><strong>unstructured</strong>: several <code>&lt;p&gt;</code>...</li>
+<li><strong>structured</strong>: <code>&lt;summary&gt;</code>, <code>&lt;msItem&gt;</code>, <code>&lt;msItemStruct&gt;</code></li>
+</ul>
+</section>
+				<!-- msContents example-->
+			<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+					<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">mscontents</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>A collection of Lollard sermons<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">mscontents</span>&gt;</span></span></code></pre>
+				<p>&nbsp;</p>
+				<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">mscontents</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>A collection of Lollard sermons<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">msitem</span> <span class="hljs-attr">n</span>=<span class="hljs-string">"1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">locus</span>&gt;</span>fol. 4r-8r<span class="hljs-tag">&lt;/<span class="hljs-name">locus</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>3rd Sunday Before Lent<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">msitem</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">msitem</span> <span class="hljs-attr">n</span>=<span class="hljs-string">"2"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">locus</span>&gt;</span>fol. 9r-16v<span class="hljs-tag">&lt;/<span class="hljs-name">locus</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Sexagesima<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">msitem</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">mscontents</span>&gt;</span></span></code></pre>
+			</section>	
+	<!-- msItem -->		
+	<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-msitem-msitemstruct-"><code>&lt;msItem&gt;</code>, <code>&lt;msItemStruct&gt;</code></h3>
+<ul>
+<li>for each discrete item in a manuscript</li>
+<li>can be categorise with @class</li>
+<li>location in the manuscript indicated with <code>&lt;locus&gt;</code> </li>
+<li><code>&lt;author&gt;</code>, <code>&lt;respStmt&gt;</code>  </li>
+<li><code>&lt;rubric&gt;</code>, <code>&lt;implicit&gt;</code>, <code>&lt;explicit&gt;</code> </li>
+<li><code>&lt;decoNote&gt;</code>, <code>&lt;filiation&gt;</code>, <code>&lt;textLang&gt;</code> </li>
+<li>or nested <code>&lt;msItems&gt;</code>...</li>
+</ul>
+</section>	
+	<!-- example textLang -->
+	<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+		<pre><code class="hljs xl">
+			
+ &lt;textlang mainlang=<span class="hljs-string">"en"</span> otherlangs=<span class="hljs-string">"la"</span>&gt;
+ 	Predominantly <span class="hljs-built_in">in</span> English <span class="hljs-keyword">with</span> Latin glosses
+ &lt;/textlang&gt;
+			
+		</code></pre>
+	</section>
+	<!-- physDesc -->		
+	<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="-physdesc-"><code>&lt;physDesc&gt;</code></h3>
+<ul>
+<li><code>&lt;objectDesc&gt;</code>: description of the (text bearing) object</li>
+<li><code>&lt;handDesc&gt;</code>: hands or styles (each in a <code>&lt;handBote&gt;</code>)</li>
+<li><code>&lt;decoDesc&gt;</code>: decorations (illustrations) (each in a <code>&lt;decoNote&gt;</code>)</li>
+<li><code>&lt;bidingDesc&gt;</code>: bindings</li>
+<li>=&gt; descriptions can also be provided as prose or paragraphs</li>
+</ul>
+</section>
+						
+	<!-- example object Desc -->
+	<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+		<h3>&lt;objectDesc&gt;</h3>
+		<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">objectdesc</span> <span class="hljs-attr">form</span>=<span class="hljs-string">"codex"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">supportdesc</span> <span class="hljs-attr">material</span>=<span class="hljs-string">"perg"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">support</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Parchment.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">support</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">extent</span>&gt;</span>i + 55 leaves <span class="hljs-tag">&lt;<span class="hljs-name">dimensions</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"leaf"</span> <span class="hljs-attr">unit</span>=<span class="hljs-string">"inch"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">height</span>&gt;</span>7¼<span class="hljs-tag">&lt;/<span class="hljs-name">height</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>5⅜<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dimensions</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">extent</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">supportdesc</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">layoutdesc</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">layout</span> <span class="hljs-attr">columns</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">ruledlines</span>=<span class="hljs-string">"25"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>In double columns.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">layout</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">layoutdesc</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">objectdesc</span>&gt;</span></span></code></pre>
+	</section>
+	<!-- other example layoutDesc -->
+	<section hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;">
+		<h3>&lt;layoutDesc&gt; </h3>
+		<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">layoutdesc</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">layout</span> <span class="hljs-attr">columns</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">ruledlines</span>=<span class="hljs-string">"42"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">locus</span> <span class="hljs-attr">from</span>=<span class="hljs-string">"f12r"</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"f15v"</span>&gt;</span> 2 columns of 42 lines pricked and ruled in ink, with
+     central rule between the columns.<span class="hljs-tag">&lt;/<span class="hljs-name">locus</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">layout</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">layout</span> <span class="hljs-attr">columns</span>=<span class="hljs-string">"3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">locus</span> <span class="hljs-attr">from</span>=<span class="hljs-string">"f16"</span>&gt;</span>Prickings for three columns are visible.<span class="hljs-tag">&lt;/<span class="hljs-name">locus</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">layout</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">layoutdesc</span>&gt;</span></span></code></pre>
+	</section>
+		<!-- other  -->
+		<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 350px; display: none;"><h3 id="other-components-of-physdesc-">Other components of <code>&lt;physDesc&gt;</code></h3>
+<ul>
+<li><code>&lt;scriptDesc&gt;</code></li>
+<li><code>&lt;musicNotation&gt;</code></li>
+<li><code>&lt;scriptNote&gt;</code></li>
+<li><code>&lt;sealDesc&gt;</code></li>
+<li><code>&lt;typeDesc&gt;</code></li>
+</ul>
+</section>
+		
+		<!-- -->
+		<section data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past" style="top: 119px; display: none;"><h3 id="other-components">Other components</h3>
+<ul>
+<li><code>&lt;addition&gt;&lt;p&gt;</code> (marginalia) <code>&lt;/p&gt;&lt;addition&gt;</code></li>
+<li><code>&lt;accMat&gt;&lt;p&gt;</code> ... <code>&lt;/p&gt;&lt;accMat&gt;</code></li>
+<li><code>&lt;history&gt;</code><ul>
+<li><code>&lt;origin&gt;</code></li>
+<li><code>&lt;provenance&gt;</code></li>
+<li><code>&lt;acquisition&gt;</code>)</li>
+</ul>
+</li>
+</ul>
+</section>
+		<!-- -->
+		<section hidden="" aria-hidden="true" class="past" style="top: 105px; display: none;">
+			<pre><code data-trim="" class="hljs pf"><span class="hljs-variable">&lt;history&gt;</span>
+  <span class="hljs-variable">&lt;origin&gt;</span>
+	<span class="hljs-variable">&lt;p&gt;</span>Written <span class="hljs-keyword">in</span> Durham during the mid twelfth
+	century.<span class="hljs-variable">&lt;/p&gt;</span>
+  <span class="hljs-variable">&lt;/origin&gt;</span>
+  <span class="hljs-variable">&lt;provenance&gt;</span>
+	<span class="hljs-variable">&lt;p&gt;</span>Recorded <span class="hljs-keyword">in</span> two medieval
+	catalogues of the books belonging <span class="hljs-keyword">to</span> Durham Priory, made <span class="hljs-keyword">in</span> <span class="hljs-number">1391</span> and
+	<span class="hljs-number">1405</span>.<span class="hljs-variable">&lt;/p&gt;</span>
+  <span class="hljs-variable">&lt;/provenance&gt;</span>
+  <span class="hljs-variable">&lt;provenance&gt;</span>
+   <span class="hljs-variable">&lt;p&gt;</span>Given <span class="hljs-keyword">to</span> W. Olleyf by William Ebchester, Prior (<span class="hljs-number">1446</span>-<span class="hljs-number">56</span>)
+	and later belonged <span class="hljs-keyword">to</span> Henry Dalton, Prior of Holy Island (Lindisfarne)
+	according <span class="hljs-keyword">to</span> inscriptions <span class="hljs-keyword">on</span> ff. <span class="hljs-number">4</span>v and <span class="hljs-number">5</span>.<span class="hljs-variable">&lt;/p&gt;</span>
+  <span class="hljs-variable">&lt;/provenance&gt;</span>
+  <span class="hljs-variable">&lt;acquisition&gt;</span>
+	<span class="hljs-variable">&lt;p&gt;</span>Presented <span class="hljs-keyword">to</span> Trinity College <span class="hljs-keyword">in</span> <span class="hljs-number">1738</span> by
+	Thomas Gale and his son Roger.<span class="hljs-variable">&lt;/p&gt;</span>
+  <span class="hljs-variable">&lt;/acquisition&gt;</span>
+<span class="hljs-variable">&lt;/history&gt;</span>	</code></pre>
+		</section>
+				
+		<!-- ===========references====== -->				
+		<section data-markdown="" data-markdown-parsed="true" class="past" style="top: 128px; display: none;" hidden="" aria-hidden="true"><h3 id="references">references</h3>
+<ul>
+<li><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html">Chapter 2 of the TEI Guidelines</a></li>
+<li><a href="http://books.openedition.org/oep/426?lang=fr">Lou Burnard' book (2014) 'What is the Text Encoding Initiative'</a></li>
+<li><a href="http://teibyexample.org/">Online tutorial: TEI by example</a></li>
+<li><a href="https://blogs.it.ox.ac.uk/jamesc/2013/04/20/self-study-part-5-the-tei-header/">TEI self study series of blog posts by James Cummings</a></li>
+</ul>
+</section>
+			<!-- ===========exercices====== -->			
+			<section data-markdown="" data-markdown-parsed="true" class="past" style="top: 179px; display: none;" hidden="" aria-hidden="true"><h3 id="exercices">exercices</h3>
+<ul>
+<li>a minimal teiHeader</li>
+<li>enhancing the teiHeader</li>
+<li>create a msDescription from different existing ones for the same manuscript</li>
+</ul>
+</section>
+			
+			<!-- ===========exercice 1====== -->			
+			<section data-markdown="" data-markdown-parsed="true" class="past" style="top: 205px; display: none;" hidden="" aria-hidden="true"><h3 id="exercice-1-">exercice 1:</h3>
+<ul>
+<li>a minimal teiHeader</li>
+<li>follow the steps given in the handout and the help of oXygen editor...</li>
+</ul>
+</section>
+			
+			<section class="past" style="top: 105px; display: block;" hidden="" aria-hidden="true">
+				<pre><code data-trim="" class="hljs dust"><span class="xml"><span class="hljs-comment">&lt;!--?xml version="1.0" encoding="UTF-8"?--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tei</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.tei-c.org/ns/1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">teiheader</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">filedesc</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">titlestmt</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My first TEI file<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">titlestmt</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">publicationstmt</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- Publication information: --&gt;</span> 
+          Unpublished demonstration file.
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">publicationstmt</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">sourcedesc</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+       <span class="hljs-comment">&lt;!--Information about the source--&gt;</span>
+         No source: this is an original work.
+       <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">sourcedesc</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">filedesc</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">teiheader</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- The transcription text goes here --&gt;</span>		
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet (...)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tei</span>&gt;</span></span></code></pre>
+			</section>
+			
+			<!-- ===========exercices====== -->			
+			<section data-markdown="" data-markdown-parsed="true" class="past" style="top: 231px; display: block;" hidden="" aria-hidden="true"><h3 id="exercice-2-">exercice 2:</h3>
+<ul>
+<li>enhancing the teiHeader</li>
+</ul>
+</section>
+			
+			<!-- ===========exercices====== -->			
+			<section data-markdown="" data-markdown-parsed="true" class="present" style="top: 153px; display: block;"><h3 id="exercice-3">exercice 3</h3>
+<ul>
+<li>create a manuscript description<ul>
+<li>to go: <a href="http://www.e-codices.ch/en/list/one/fmb/cb-0079">e-codice manuscript</a></li>
+<li>use the template:</li>
+<li>better to work in groups of two</li>
+</ul>
+</li>
+</ul>
+</section>
+
+	<!-- end -->					
+			</div>
+		<div class="backgrounds"><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: block;"></div><div class="slide-background past" data-loaded="true" style="display: block;"></div><div class="slide-background present" data-loaded="true" style="display: block;"></div></div><div class="progress" style="display: block;"><span style="width: 1264px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"></button><button class="navigate-right" aria-label="next slide" disabled="disabled"></button><button class="navigate-up" aria-label="above slide" disabled="disabled"></button><button class="navigate-down" aria-label="below slide" disabled="disabled"></button></aside><div class="slide-number" style="display: block;"><span class="slide-number-a">39</span></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">exercice 3
+
+create a manuscript description
+to go: e-codice manuscript
+use the template:
+better to work in groups of two
+
+
+
+</div></div>
+
+		<script src="./template-ms-description_files/head.min.js"></script>
+		<script src="./template-ms-description_files/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+			
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			// Shows the slide number using default formatting
+			Reveal.configure({ slideNumber: true });
+			
+			// Slide number formatting can be configured using these variables:
+			//  "h.v": 	horizontal . vertical slide number (default)
+			//  "h/v": 	horizontal / vertical slide number
+			//    "c": 	flattened slide number
+			//  "c/t": 	flattened slide number / total slides
+			Reveal.configure({ slideNumber: 'c/t' });
+		</script>
+	
+
+</body></html>
