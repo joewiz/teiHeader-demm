@@ -1,0 +1,118 @@
+﻿<?oxygen RNGSchema="enrich-wamcp.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xmlns="http://www.tei-c.org/ns/1.0">
+		<fileDesc>
+			<titleStmt>
+				<title/>
+				
+			</titleStmt>
+			<publicationStmt>
+				<date calendar="Gregorian"/>
+				<publisher/>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc xml:id="" xml:lang="en">
+					<msIdentifier>
+						<settlement/>
+						<institution/>
+						<repository/>
+						<idno/>
+					</msIdentifier>
+					<msContents>
+						<summary/>
+						<msItem>
+							<author ref="">
+							
+							</author>
+							<title xml:lang="">/title>
+							
+							<note/>
+							<incipit></incipit>
+							<explicit></explicit>
+							<listBibl>
+								<bibl>
+								
+								</bibl>
+							
+							</listBibl>
+							<textLang mainLang=""></textLang>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc form="">
+							<supportDesc material="">
+								<extent><dimensions unit="cm">
+										<height/>
+										<width/>
+									</dimensions>
+								</extent>
+								<foliation>								
+								</foliation>
+								<collation>								
+								</collation>
+								<condition>								
+								</condition>
+							</supportDesc>
+							<layoutDesc>
+								<layout columns="" ruledLines="" n="">
+								
+								</layout>
+								
+							</layoutDesc>
+						</objectDesc>
+						<handDesc>
+							<handDesc hands="">
+								<handNote script=""></handNote>
+							</handDesc>
+						</handDesc>
+						<decoDesc>
+							<decoNote type=""></decoNote>
+						</decoDesc>
+						<additions>					
+							
+						</additions>
+						<bindingDesc>
+						
+						</bindingDesc>
+					</physDesc>
+					<history>
+						<summary/>
+						<origin>
+							<date calendar="" when=""></date>
+						
+						</origin>
+						<provenance/>
+						<acquisition> </acquisition>
+					</history>
+					<additional>
+						<adminInfo>
+							<recordHist>
+								<source></source>
+							</recordHist>
+							<availability>
+							</availability>
+							<note/>
+						</adminInfo>
+					</additional>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		
+		
+		<revisionDesc>
+			<change when="">
+				<persName></persName>
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<facsimile>
+		<!-- facsimile information about the manuscript -->
+		<graphic/>
+	</facsimile>
+	<text>
+		<body>
+			<!-- If you had a transcription of the manuscript you would put it here -->
+			<p/>
+		</body>
+	</text>
+</TEI>

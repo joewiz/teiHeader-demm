@@ -101,7 +101,7 @@ The choices you have to make come under two main categories:
 => use the contextual help oXygen offers at every step. You can also use the
 [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/ref-teiHeader.html) and the examples it provides.
 
-=> after every 
+
 
 ### Title Statement ( `<titleStmt>` )
 - Add a proper title: `<title>`
@@ -236,3 +236,4 @@ or using some structured elements:
 - Look at the 3 descriptions provided
 - use them to create a new description of your own using the template 'template-ms-description.xml'
 - you can also compare with the [facsimile](http://www.e-codices.ch/en/fmb/cb-0079)
+
