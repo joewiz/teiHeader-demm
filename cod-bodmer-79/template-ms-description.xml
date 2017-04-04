@@ -1,17 +1,19 @@
-﻿<?oxygen RNGSchema="enrich-wamcp.rnc" type="compact"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader xmlns="http://www.tei-c.org/ns/1.0">
 		<fileDesc>
 			<titleStmt>
-				<title/>
-				
+				<title>Roman de la Rose</title>				
 			</titleStmt>
 			<publicationStmt>
-				<date calendar="Gregorian"/>
-				<publisher/>
+				
+				<publisher>   fjfjhhg</publisher>
 			</publicationStmt>
 			<sourceDesc>
-				<msDesc xml:id="" xml:lang="en">
+				<msDesc xml:id="test_001" xml:lang="en">
 					<msIdentifier>
 						<settlement/>
 						<institution/>
@@ -21,14 +23,13 @@
 					<msContents>
 						<summary/>
 						<msItem>
-							<author ref="">
+							<author>
 							
 							</author>
 							<title xml:lang="">/title>
 							
 							<note/>
-							<incipit></incipit>
-							<explicit></explicit>
+							         
 							<listBibl>
 								<bibl>
 								

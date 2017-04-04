@@ -1,109 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xmlns:xi="http://www.w3.org/2001/XInclude"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../xsd/TEI-P5/1.7/tei-p5-e-codices_1.7.xsd"
-     xml:lang="deu"
-     xml:base="http://www.e-codices.unifr.ch/en/description/fmb/cb-0079/CMDCH"
-     version="5.1"
-     xml:id="eCod_fmb-cb-0079_CMDCH">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>[<persName role="author" key="pnd_118543482">Guillaume de Lorris</persName>, <persName role="author" key="pnd_118557203">Jean de Meung</persName>], Li rommans de la Rose.</title>
-         </titleStmt>
-         <editionStmt>
-            <edition>Elektronische Version nach TEI P5.1</edition>
-            <respStmt>
-               <resp>Konvertierung nach TEI: <persName>Ramona Fritschi</persName>
-                  <date when="2009-03-17">17.03.2009</date>
-               </resp>
-               <name>e-codices - Virtual Manuscript Library of Switzerland</name>
-            </respStmt>
-         </editionStmt>
-         <publicationStmt>
-            <publisher>e-codices - Virtual Manuscript Library of Switzerland</publisher>
-            <availability status="restricted" n="copyright">
-               <licence>
-                  <p>Mit freundlicher Genehmigung des <orgName xml:base="http://www.urs-graf-verlag.com">Urs Graf Verlag, Dietikon</orgName>. Das Copyright an der Handschriftenbeschreibung liegt beim Verlag.</p>
-               </licence>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <bibl>PDF vorhanden</bibl>
-            <msDesc xml:lang="fra" xml:id="fmb-cb-0079_CMDCH">
-               <msIdentifier>
-                  <settlement>Cologny</settlement>
-                  <repository>Fondation Martin Bodmer</repository>
-                  <idno>Cod. Bodmer 79</idno>
-               </msIdentifier>
-               <head>
-                  <title>[<persName role="author" key="pnd_118543482">Guillaume de Lorris</persName>, <persName role="author" key="pnd_118557203">Jean de Meung</persName>], Li rommans de la Rose.</title>
-                  <origDate notBefore="1308" notAfter="1308">[13]08</origDate>
-               </head>
-               <physDesc>
-                  <objectDesc form="codex">
-                     <supportDesc material="perg">
-                        <support>Parch.</support>
-                        <extent>
-                           <measure type="leavesCount" n="A-D+ 137+ X-Z">A-D+ 137+ X-Z ff.</measure>
-                           <measure type="pageDimensions" n="26,5 x 18cm">26,5 x 18</measure>
-                        </extent>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout columns="2" writtenLines="40">2 col., 40 lignes
-									<measure type="written">18,5/19 X 12,5/13 (5,5/6)</measure>
-                        </layout>
-                     </layoutDesc>
-                  </objectDesc>
-                  <decoDesc>
-                     <decoNote>miniatures f. <locus from="1r">1r</locus> et <locus from="1v">v</locus>, <locus from="2r">2r</locus> et <locus from="2v">v</locus>, <locus from="3r">3r</locus> et <locus from="3v">v</locus>, <locus from="4r">4r</locus>, <locus from="5r">5r</locus>, <locus from="6v">6v</locus>, <locus from="10v">10v</locus>, <locus from="12r">12r</locus>, <locus from="13v">13v</locus>, <locus from="21r">21r</locus>, <locus from="25r">25r</locus>, <locus from="27v">27v</locus>, <locus from="47r">47r</locus>, <locus from="78r">78r</locus>, <locus from="95v">95v</locus>, <locus from="97r">97r</locus>
-                     </decoNote>
-                     <decoNote>initiales</decoNote>
-                     <decoNote>rubriqué</decoNote>
-                  </decoDesc>
-                  <bindingDesc>
-                     <binding notBefore="1700" notAfter="1799">
-                        <p>
-                           <locus from="Vorderseite">Reliure</locus>
-                           <date>18<hi rend="sup">e</hi> s.</date>, peau estampée en or sur carton</p>
-                     </binding>
-                  </bindingDesc>
-               </physDesc>
-               <history>
-                  <origin>
-                     <p>
-                        <hi rend="small-caps">[Datation]:</hi>
-                        <quote>Ci commence li rommans de la Rose ou lart damours est toute enclose lan .iii<hi rend="sup">e</hi>. et .viij</quote>, <locus from="1r">f. 1r</locus>
-                     </p>
-                  </origin>
-                  <acquisition>Voir <hi rend="small-caps">Vielliard</hi> F., Manuscrits français du moyen âge : Bibliotheca Bodmeriana. Catalogues II, Cologny/Genève, 1975.
-						</acquisition>
-               </history>
-               <additional>
-                  <adminInfo>
-                     <recordHist>
-                        <source>
-                           <bibl>Katalog der datierten Handschriften in der Schweiz in lateinischer Schrift vom Anfang des Mittelalters bis 1550, Bd. II: Die Handschriften der Bibliotheken Bern-Porrentruy, bearbeitet von Beat Matthias von Scarpatetti, Dietikon-Zürich <date>1983</date>, Nr. 112, S. 46.</bibl>
-                        </source>
-                     </recordHist>
-                  </adminInfo>
-                  <listBibl>
-                     <bibl>
-                        <abbr><hi rend="small-caps">Vielliard</hi>, Catalogue</abbr> p. 153-156, pl. 16.</bibl>
-                  </listBibl>
-               </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <!--
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../xsd/TEI-P5/1.7/tei-p5-e-codices_1.7.xsd" xml:lang="deu" xml:base="http://www.e-codices.unifr.ch/en/description/fmb/cb-0079/CMDCH" version="5.1" xml:id="eCod_fmb-cb-0079_CMDCH">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>[<persName role="author" key="pnd_118543482">Guillaume de Lorris</persName>, <persName role="author" key="pnd_118557203">Jean de Meung</persName>], Li rommans de la Rose.</title>
+			</titleStmt>
+			<editionStmt>
+				<edition>Elektronische Version nach TEI P5.1</edition>
+				<respStmt>
+					<resp>Konvertierung nach TEI: <persName>Ramona Fritschi</persName>
+						<date when="2009-03-17">17.03.2009</date>
+					</resp>
+					<name>e-codices - Virtual Manuscript Library of Switzerland</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>e-codices - Virtual Manuscript Library of Switzerland</publisher>
+				<availability status="restricted" n="copyright">
+					<licence>
+						<p>Mit freundlicher Genehmigung des <orgName xml:base="http://www.urs-graf-verlag.com">Urs Graf Verlag, Dietikon</orgName>. Das Copyright an der Handschriftenbeschreibung liegt beim Verlag.</p>
+					</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>PDF vorhanden</bibl>
+				<msDesc xml:lang="fra" xml:id="fmb-cb-0079_CMDCH">
+					<msIdentifier>
+						<settlement>Cologny</settlement>
+						<repository>Fondation Martin Bodmer</repository>
+						<idno>Cod. Bodmer 79</idno>
+					</msIdentifier>
+					<head>
+						<title>[<persName role="author" key="pnd_118543482">Guillaume de Lorris</persName>, <persName role="author" key="pnd_118557203">Jean de Meung</persName>], Li rommans de la Rose.</title>
+						<origDate notBefore="1308" notAfter="1308">[13]08</origDate>
+					</head>
+					<physDesc>
+						<objectDesc form="codex">
+							<supportDesc material="perg">
+								<support>Parch.</support>
+								<extent>
+									<measure type="leavesCount" n="A-D+ 137+ X-Z">A-D+ 137+ X-Z ff.</measure>
+									<measure type="pageDimensions" n="26,5 x 18cm">26,5 x 18</measure>
+								</extent>
+							</supportDesc>
+							<layoutDesc>
+								<layout columns="2" writtenLines="40">2 col., 40 lignes <measure type="written">18,5/19 X 12,5/13 (5,5/6)</measure>
+								</layout>
+							</layoutDesc>
+						</objectDesc>
+						<decoDesc>
+							<decoNote>miniatures f. <locus from="1r">1r</locus> et <locus from="1v">v</locus>, <locus from="2r">2r</locus> et <locus from="2v">v</locus>, <locus from="3r">3r</locus> et <locus from="3v">v</locus>, <locus from="4r">4r</locus>, <locus from="5r">5r</locus>, <locus from="6v">6v</locus>, <locus from="10v">10v</locus>, <locus from="12r">12r</locus>, <locus from="13v">13v</locus>, <locus from="21r">21r</locus>, <locus from="25r">25r</locus>, <locus from="27v"
+								>27v</locus>, <locus from="47r">47r</locus>, <locus from="78r">78r</locus>, <locus from="95v">95v</locus>, <locus from="97r">97r</locus>
+							</decoNote>
+							<decoNote>initiales</decoNote>
+							<decoNote>rubriqué</decoNote>
+						</decoDesc>
+						<bindingDesc>
+							<binding notBefore="1700" notAfter="1799">
+								<p>
+									<locus from="Vorderseite">Reliure</locus>
+									<date>18<hi rend="sup">e</hi> s.</date>, peau estampée en or sur carton</p>
+							</binding>
+						</bindingDesc>
+					</physDesc>
+					<history>
+						<origin>
+							<p>
+								<hi rend="small-caps">[Datation]:</hi>
+								<quote>Ci commence li rommans de la Rose ou lart damours est toute enclose lan .iii<hi rend="sup">e</hi>. et .viij</quote>, <locus from="1r">f. 1r</locus>
+							</p>
+						</origin>
+						<acquisition>Voir <hi rend="small-caps">Vielliard</hi> F., Manuscrits français du moyen âge : Bibliotheca Bodmeriana. Catalogues II, Cologny/Genève, 1975. </acquisition>
+					</history>
+					<additional>
+						<adminInfo>
+							<recordHist>
+								<source>
+									<bibl>Katalog der datierten Handschriften in der Schweiz in lateinischer Schrift vom Anfang des Mittelalters bis 1550, Bd. II: Die Handschriften der Bibliotheken Bern-Porrentruy, bearbeitet von Beat Matthias von Scarpatetti, Dietikon-Zürich <date>1983</date>, Nr. 112, S. 46.</bibl>
+								</source>
+							</recordHist>
+						</adminInfo>
+						<listBibl>
+							<bibl>
+								<abbr><hi rend="small-caps">Vielliard</hi>, Catalogue</abbr> p. 153-156, pl. 16.</bibl>
+						</listBibl>
+					</additional>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<!--
          <revisionDesc>
          <change who="Marina" when="23.01.2013"></change>
          </revisionDesc>
-      --></teiHeader>
-   <text>
-      <body>
-         <p/>
-      </body>
-   </text>
+      -->
+	</teiHeader>
+	<text>
+		<body>
+			<p/>
+		</body>
+	</text>
 </TEI>

@@ -1,404 +1,311 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xmlns:xi="http://www.w3.org/2001/XInclude"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../xsd/TEI-P5/1.7/tei-p5-e-codices_1.7.xsd"
-     xml:lang="deu"
-     xml:base="http://www.e-codices.unifr.ch/en/description/fmb/cb-0079"
-     version="5.1"
-     xml:id="eCod_fmb-cb-0079">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>
-               <persName role="author" key="pnd_118543482">Guillaume de Lorris</persName> et <persName role="author" key="pnd_118557203">Jean de Meun</persName>, Roman de la Rose</title>
-         </titleStmt>
-         <editionStmt>
-            <edition>Elektronische Version nach TEI P5.1</edition>
-            <respStmt>
-               <resp>Konvertierung nach TEI: <persName>Roberta Padlina</persName>
-                  <date when="2010-03-09">09.03.2010</date>
-               </resp>
-               <name>e-codices - Virtual Manuscript Library of Switzerland</name>
-            </respStmt>
-         </editionStmt>
-         <publicationStmt>
-            <publisher>e-codices - Virtual Manuscript Library of Switzerland</publisher>
-            <availability status="restricted" n="cc-by">
-               <licence target="http://creativecommons.org/licenses/by/3.0/">
-                  <p>Creative Commons Attribution 3.0 Unported (CC BY 3.0)</p>
-               </licence>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <bibl>PDF vorhanden</bibl>
-            <msDesc xml:lang="fra" xml:id="fmb-cb-0079">
-               <msIdentifier>
-                  <settlement>Cologny</settlement>
-                  <repository>Fondation Martin Bodmer</repository>
-                  <idno>Cod. Bodmer 79</idno>
-               </msIdentifier>
-               <head>
-                  <title>
-                     <persName role="author" key="pnd_118543482">Guillaume de Lorris</persName> et <persName role="author" key="pnd_118557203">Jean de Meun</persName>, Roman de la Rose</title>
-                  <origDate notBefore="1308" notAfter="1308">1308</origDate>
-               </head>
-               <msContents>
-                  <msItem>
-                     <note>Au <locus from="V6">v° du premier feuillet de garde</locus> en parchemin et au <locus from="V7">r° du second</locus>, <term>table des matières</term> incomplète ajoutée au <date>XVᵉ siècle</date>.</note>
-                  </msItem>
-                  <msItem>
-                     <locus from="1r" to="138r">Ff. 1a-138b</locus>
-                     <title>
-                        <persName role="author" key="pnd_118543482">Guillaume de Lorris</persName> et <persName role="author" key="pnd_118557203">Jean de Meun</persName>, Roman de la Rose</title>
-                     <rubric>Ci commence li rommans de la Rose ou l'art d'amours est toute enclose l'an .IIIᶜ. et .VIII. <supplied>Rubr.</supplied>
-                     </rubric>
-                     <msItem>
-                        <locus from="1r">fol. 1a</locus>
-                        <note>Début:</note>
-                        <incipit>Maintes gens dient que en songes<lb/>
-					N'a se fables non et mençonges;<lb/>
-					Mais l'en peut tiex songes songier<lb/>
-					Qui ne sont mie mençongier,<lb/>
-					Ains sont aprés bien aparant,<lb/>
-					Si em puis bien traire a garant<lb/>
-					.I. aucteur qui ot non Macrobes<lb/>
-					Qui ne tint pas songes a lobes<note place="foot">Ajouté, avec un renvoi, par le copiste au bas du <locus from="1r">fol. 1a</locus>.</note>,<lb/>
-					Ainçois descrit l'avision<lb/>
-					Qui avint au roi Ciprion.<lb/>
-					Quiconques cuide ne qui die<lb/>
-					Que soit folie et musardie<lb/>
-					De croire que songes aviengne,<lb/>
-					Qui se voudra, por fol m'en tiengne<lb/>
-					Car endroit moi ai je creance<lb/>
-					Que songes sont senefiance<lb/>
-					Des biens as gens et des ennuis,<lb/>
-					Que li pluseur songent de nuis<lb/>
-					Maintes choses couvertement<lb/>
-					Que l'en voit puis apertement.<lb/>
-					Ou vintieme an de mon aage,<lb/>
-					Ou point qu'Amours prent le paage<lb/>
-					Des genes gens, couchiez m'estoie<lb/>
-					Une nuit, si com je souloie,<lb/>
-					Et me dormoie mout forment,<lb/>
-					Si vi .I. songe en mon dorment<lb/>
-					Qui mout fu biaus et mout me plot;</incipit>
-                     </msItem>
-                     <msItem>
-                        <locus from="1r">fol. 1b</locus>
-                        <quote rend="dots-after">
-                           Mais en cel songe onques riens n'ot<lb/>
-					Qui avenu trestout ne soit<lb/>
-					Si con li contes racontoit.<lb/>
-					Or vueil ce songe rimoier<lb/>
-					Por vos cuers plus fere esgaier,<lb/>
-					Qu'Amors le me prie et-commande;<lb/>
-					Que se nus ne nule demande<lb/>
-					Comment je vueil que cist rommans<lb/>
-					Soit apelé que je commans,<lb/>
-					Ce est li Rommans de la Rose<lb/>
-					Ou l'art d'Amours est toute enclose.<lb/>
-					La matiere en est bone et neuve,<lb/>
-					Or doinst Dieus qu'en la receuve<lb/>
-					Cele pour qui je l'ai empris.<lb/>
-					Et tant est digne d'estre amee<lb/>
-					Qu'el doit estre rose clamee.<lb/>
-					Avis m'iert que il estoit mays,<lb/>
-					Il a bien .I. an et .V. mais,<lb/>
-					Que ou mois de may je songoie<lb/>
-					El tens amoureus, plain de joie,<lb/>
-					Ou tens ou toute riens s'esgaie,<lb/>
-					Que il n'est ne buisson ne haie<lb/>
-					Qui en may parer ne se vueille<lb/>
-					Et couvrir de nouvele fueille
-                        </quote>
-                     </msItem>
-                     <msItem>
-                        <locus from="138r">fol. 138a</locus>
-                        <note>Fin</note>
-                        <explicit>
-                           <gap reason="sampling"/>Quant en si haut degré me vi,<lb/>
-					Que j'oi si noblement chevi<lb/>
-					Que mes procés n'iert mes doutable,<lb/>
-					Por ce que fins et agraable<lb/>
-					Fusse vers touz mes bienfaiteurs,<lb/>
-					Si com doit fere bons deteurs,<lb/>
-					Car mout estoie a eus tenus<lb/>
-					Quant par eus iere dveenus<lb/>
-					Si riche, et por voir l'afiche,<lb/>
-					Que Richece n'iert pas si riche,<lb/>
-					Au dieu d'amors et a Venus,<lb/>
-					Qui m'orent aidié miex que nus,<lb/>
-					Puis a touz les barons de l'ost,<lb/>
-					Dont je pri Dieu que ja ne l'ost</explicit>
-                     </msItem>
-                     <msItem>
-                        <locus from="138r">fol. 138b</locus>
-                        <explicit>Des secors as fins amoreus,<lb/>
-					Entre les baisiers savoureus<lb/>
-					Rendi graces .X. fois ou .XX..<lb/>
-					Mes de Reson ne me souvint,<lb/>
-					Qui tant en moi gasta de paine.<lb/>
-					Maugré Richece la vilaine,<lb/>
-					Qui onques de pitié n'usa,<lb/>
-					Quant l'entree me refusa<lb/>
-					Du senteret qu'ele gardoit<lb/>
-					-De cestui pas ne se gardoit<lb/>
-					Par ou je suis ceans venus<lb/>
-					Repostement, les sauz menus -<lb/>
-					Maugré mes mortiex anemis,<lb/>
-					Qui tant m'orent arriere mis,<lb/>
-					Especiaument Jalousie<lb/>
-					Et tout son chapel de sousie,<lb/>
-					Qui des amans les roses garde<lb/>
-					(Mout en fet ore bone garde !),<lb/>
-					Ainz que d'ilec me remuasse<lb/>
-					Ou, mon vueil, encor demorasse,<lb/>
-					Par grant joliveté cueilli<lb/>
-					La flour du biau rosier fueilli.<lb/>
-					Ainsint oi la rose vermeille.<lb/>
-					A tant fu jour, et je m'esveille.</explicit>
-                      <lb/><finalRubric>Explicit iste liber, scriptor sit crimine liber. Amen.</finalRubric>
-                     </msItem>
-                  </msItem>
-                  <msItem>
-                     <note>Le feuillet <locus from="138v">138v°</locus> est blanc.</note>
-                  </msItem>
-                  <msItem>
-                     <note>Au <locus from="N2">v° du dernier feuillet de garde</locus> en parchemin (écriture cursive du XIVᵉ ou XVᵉ siècle): <quote>Fleur fruit et fest feulle, escorce et racine.</quote>
-                     </note>
-                  </msItem>
-               </msContents>
-               <physDesc>
-                  <objectDesc form="codex">
-                     <supportDesc material="perg">
-                        <support>
-                           <p>Parchemin</p>
-                           <p>Deux feuillets de garde en <material>papier</material>, contemporains de la reliure, au début et à la fin. Deux feuillets de garde au début, un feuillet de garde à la fin en <material>parchemin</material>, contemporains du manuscrit.</p>
-                        </support>
-                        <extent>
-                           <measure type="leavesCount" n="IV + 137 + III">IV + 137 + III feuillets</measure>
-                           <measure type="pageDimensions" n="26.3 x 17.6 cm">263 x 176 mm</measure>
-                        </extent>
-                        <foliation>Foliotation contemporaine du manuscrit, en chiffres romains, souvent très effacée, parfois absente.</foliation>
-                        <collation>Tableau des cahiers:
-				<table>
-                              <row>
-                                 <cell>N° d'ordre</cell>
-                                 <cell>Feuillets</cell>
-                                 <cell>Composition</cell>
-                                 <cell><catchwords>Réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>1</cell>
-                                 <cell>
-                                    <locus from="1r" to="4r">1-4</locus>
-                                 </cell>
-                                 <cell>2-2</cell>
-                                 <cell>sans</cell>
-                              </row>
-                              <row>
-                                 <cell>2</cell>
-                                 <cell>
-                                    <locus from="5r" to="8r">5-8</locus>
-                                 </cell>
-                                 <cell>2-2</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>3</cell>
-                                 <cell>
-                                    <locus from="9r" to="16r">9-16</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell>trace</cell>
-                              </row>
-                              <row>
-                                 <cell>4</cell>
-                                 <cell>
-                                    <locus from="17r" to="24r">17-24</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell>sans</cell>
-                              </row>
-                              <row>
-                                 <cell>5</cell>
-                                 <cell>
-                                    <locus from="25r" to="32r">25-32</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell>sans</cell>
-                              </row>
-                              <row>
-                                 <cell>6</cell>
-                                 <cell>
-                                    <locus from="33r" to="40r">33-40</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell>sans</cell>
-                              </row>
-                              <row>
-                                 <cell>7</cell>
-                                 <cell>
-                                    <locus from="41r" to="48r">41-48</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>8</cell>
-                                 <cell>
-                                    <locus from="49r" to="56r">49-56</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>9</cell>
-                                 <cell>
-                                    <locus from="57r" to="64r">57-64</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>10</cell>
-                                 <cell>
-                                    <locus from="65r" to="72r">65-72</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>11</cell>
-                                 <cell>
-                                    <locus from="73r" to="80r">73-80</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>12</cell>
-                                 <cell>
-                                    <locus from="81r" to="88r">81-88</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>13</cell>
-                                 <cell>
-                                    <locus from="89r" to="96r">89-96</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell>sans</cell>
-                              </row>
-                              <row>
-                                 <cell>14</cell>
-                                 <cell>
-                                    <locus from="97r" to="104r">97-104</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>15</cell>
-                                 <cell>
-                                    <locus from="105r" to="110r">105-110</locus>
-                                 </cell>
-                                 <cell>3-3</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>16</cell>
-                                 <cell>
-                                    <locus from="111r" to="118r">111-118</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell><catchwords>réclame</catchwords></cell>
-                              </row>
-                              <row>
-                                 <cell>17</cell>
-                                 <cell>
-                                    <locus from="119r" to="126r">119-126</locus>
-                                 </cell>
-                                 <cell>4-4</cell>
-                                 <cell>sans</cell>
-                              </row>
-                              <row>
-                                 <cell>18</cell>
-                                 <cell>
-                                    <locus from="127r" to="138r">127-138</locus>
-                                 </cell>
-                                 <cell>6-6</cell>
-                                 <cell>sans</cell>
-                              </row>
-                           </table>
-                        </collation>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout columns="2" writtenLines="40">Justification: <measure type="written">189 x 130 mm</measure>. Texte sur deux colonnes; 40 lignes par colonne. Réglure à la mine de plomb.</layout>
-                     </layoutDesc>
-                  </objectDesc>
-                  <handDesc hands="1">
-                     <handNote script="gotica">Ecriture gothique. Une seule main.</handNote>
-                  </handDesc>
-                  <decoDesc>
-                     <decoNote type="title">Titres rubriqués.</decoNote>
-                     <decoNote type="initial">
-                        <term>Initiales</term> (2 lignes) alternativement bleues et rouges à filigranes et prolongements de la couleur opposée.</decoNote>
-                     <decoNote type="initial">Au <locus from="1r">fol. 1</locus>, une initiale (4 lignes) bleue sur fond rouge rehaussé d'or et une initiale (2 lignes) rouge sur fond bleu rehaussé d'or, à prolongements bleus et rouges, ornés d'animaux (oiseaux, lièvres, cerf, lévrier) et se terminant par des feuilles de vigne.</decoNote>
-                     <decoNote type="illustration">22 peintures à dominante bleu et rouge rehaussées d'or (taille variable, env. 60 x 45 mm).</decoNote>
-                  </decoDesc>
-                  <bindingDesc>
-                     <binding contemporary="false" notBefore="1700" notAfter="1799">
-                        <p>Reliure du <date>XVIIIᵉ siècle</date> en <locus from="Vorderseite">maroquin rouge</locus> à filet doré. <locus from="Schliessenseite">Tranches</locus> dorées.</p>
-                     </binding>
-                  </bindingDesc>
-               </physDesc>
-               <history>
-                  <provenance>
-                     <p>1) <persName role="former_possessor">J. B. Denis Guyon de Sardière</persName>. (Au <locus from="V5">r° du premier feuillet de garde</locus> et au <locus from="138r">fol. 138</locus>: « Guyon de Sardière ».)<lb/>
-		Cf. <bibl>
-                           <hi rend="italic">Catalogue des livres de la Bibliothèque de feu M. J. B. Denis Guyon chev. seigneur de Sardiere<gap/>
-                           </hi>, Paris, 1759, n° 528, pp. 54-55</bibl>: « Li Rommans de la Rose, ou l'Art d'Amour est toute enclose, par Guill. de Lorris et Jehan de Meung, dit Clopinel. Ms. sur velin, in fol. rel. antiq. »<lb/>
-			et <bibl>« Eclaircissemens », p. IX</bibl>: « On lit a la premiere page, qu'il est de l'an 1308<gap/> l'écriture en est assez belle; et a la fin de l'ouvrage le copiste a mis ce vers: Explicit iste liber, scriptor sit crimine liber. Amen. Les miniatures n'ont que le mérite de l'antiquité; il parroit avoir appartenu à François I; car sur le plat de la couverture, on voit d'un coté un portrait de ce Roi, avec cette inscription, <hi rend="small-caps">F. Rex</hi>, et de l'autre celui de Didon, Dido<gap/> » (cet ex-libris a aujourd'hui disparu).<note place="foot">Cf. aussi, <bibl>E. <hi rend="small-caps">Langlois</hi>, <hi rend="italic">Les manuscrits du Roman de la Rose. Description et classement</hi>
-                              <gap/> (<hi rend="italic">Travaux et mémoires de l'Université de Lille, Nouvelle Série. I. Droit, Lettres</hi>, Vol. 7), Lille, Paris, 1910, p. 162 note 4</bibl>.</note>
-                     </p>
-                     <p>2) <persName role="former_possessor">Suchtelen</persName> (XIXᵉ siècle). Au <locus from="1r">fol. 1</locus>, tampon « <orgName>Bibliotheca Suchtelen</orgName> »; au <locus from="Vorderseite">plat intérieur</locus> de la reliure « ex-libris Bibliotheca Suchtelen » avec blason et devise « Aequa Mente ». Vente, 1836.</p>
-                     <p>3) Au <locus from="1r">fol. 1</locus>, on trouve les traces illisibles d'un tampon de bibliothèque en caractères cyrilliques et au <locus from="Vordere_Innenseite">plat intérieur</locus> de la reliure un ex-libris avec les mêmes caractères, mais si la plus grande partie de la collection Suchtelen est entrée à la bibliothèque publique de Leningrad, aucun des manuscrits du Roman de la Rose signalés à Leningrad ne semble correspondre à celui-ci.</p>
-                     <p>Autres mentions qui n'ont pu être identifiées:<lb/>
-				au <locus from="V2">v° du premier feuillet de garde</locus> signature (écriture du XVIIIᵉ siècle): « F. Mayer Constanten. »;<lb/>
-				au <locus from="1r">fol. 1</locus>, numéro 7769 barré au crayon et remplacé par 3370;<lb/>
-				au <locus from="Vorderseite">plat intérieur</locus> de la reliure ex-libris arraché sous lequel on distingue un autre ex-libris portant le numéro 2154.</p>
-                  </provenance>
-                  <acquisition>
-                     <p>4) Acquis par <persName role="former_possessor" key="pnd_116216387">Martin Bodmer</persName> en <date>1935</date>.</p>
-                  </acquisition>
-               </history>
-               <additional>
-                  <adminInfo>
-                     <recordHist>
-                        <source>
-                           <bibl><persName>Vielliard Françoise</persName>, Manuscrits Français du Moyen Âge, Cologny-Genève, <date>1975</date>, pp. 153-156.</bibl>
-                        </source>
-                     </recordHist>
-                  </adminInfo>
-                  <listBibl>
-                     <bibl>Félix <hi rend="small-caps">Lecoy</hi>, <hi rend="italic">Guillaume de Lorris et Jean de Meun. Le roman de la Rose …</hi> (<hi rend="italic">Classiques français du Moyen Âge, 92, 95, 98</hi>), Paris, 1969-1970, 3 vol.</bibl>
-                     <bibl>Voir PI. 16.</bibl>
-                  </listBibl>
-               </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <!--revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../xsd/TEI-P5/1.7/tei-p5-e-codices_1.7.xsd" xml:lang="deu" xml:base="http://www.e-codices.unifr.ch/en/description/fmb/cb-0079" version="5.1" xml:id="eCod_fmb-cb-0079">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>
+					<persName role="author" key="pnd_118543482">Guillaume de Lorris</persName> et <persName role="author" key="pnd_118557203">Jean de Meun</persName>, Roman de la Rose</title>
+			</titleStmt>
+			<editionStmt>
+				<edition>Elektronische Version nach TEI P5.1</edition>
+				<respStmt>
+					<resp>Konvertierung nach TEI: <persName>Roberta Padlina</persName>
+						<date when="2010-03-09">09.03.2010</date>
+					</resp>
+					<name>e-codices - Virtual Manuscript Library of Switzerland</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>e-codices - Virtual Manuscript Library of Switzerland</publisher>
+				<availability status="restricted" n="cc-by">
+					<licence target="http://creativecommons.org/licenses/by/3.0/">
+						<p>Creative Commons Attribution 3.0 Unported (CC BY 3.0)</p>
+					</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>PDF vorhanden</bibl>
+				<msDesc xml:lang="fra" xml:id="fmb-cb-0079">
+					<msIdentifier>
+						<settlement>Cologny</settlement>
+						<repository>Fondation Martin Bodmer</repository>
+						<idno>Cod. Bodmer 79</idno>
+					</msIdentifier>
+					<head>
+						<title>
+							<persName role="author" key="pnd_118543482">Guillaume de Lorris</persName> et <persName role="author" key="pnd_118557203">Jean de Meun</persName>, Roman de la Rose</title>
+						<origDate notBefore="1308" notAfter="1308">1308</origDate>
+					</head>
+					<msContents>
+						<msItem>
+							<note>Au <locus from="V6">v° du premier feuillet de garde</locus> en parchemin et au <locus from="V7">r° du second</locus>, <term>table des matières</term> incomplète ajoutée au <date>XVᵉ siècle</date>.</note>
+						</msItem>
+						<msItem>
+							<locus from="1r" to="138r">Ff. 1a-138b</locus>
+							<title>
+								<persName role="author" key="pnd_118543482">Guillaume de Lorris</persName> et <persName role="author" key="pnd_118557203">Jean de Meun</persName>, Roman de la Rose</title>
+							<rubric>Ci commence li rommans de la Rose ou l'art d'amours est toute enclose l'an .IIIᶜ. et .VIII. <supplied>Rubr.</supplied>
+							</rubric>
+							<msItem>
+								<locus from="1r">fol. 1a</locus>
+								<note>Début:</note>
+								<incipit>Maintes gens dient que en songes<lb/> N'a se fables non et mençonges;<lb/> Mais l'en peut tiex songes songier<lb/> Qui ne sont mie mençongier,<lb/> Ains sont aprés bien aparant,<lb/> Si em puis bien traire a garant<lb/> .I. aucteur qui ot non Macrobes<lb/> Qui ne tint pas songes a lobes<note place="foot">Ajouté, avec un renvoi, par le copiste au bas du <locus from="1r">fol. 1a</locus>.</note>,<lb/> Ainçois descrit l'avision<lb/> Qui avint au roi
+									Ciprion.<lb/> Quiconques cuide ne qui die<lb/> Que soit folie et musardie<lb/> De croire que songes aviengne,<lb/> Qui se voudra, por fol m'en tiengne<lb/> Car endroit moi ai je creance<lb/> Que songes sont senefiance<lb/> Des biens as gens et des ennuis,<lb/> Que li pluseur songent de nuis<lb/> Maintes choses couvertement<lb/> Que l'en voit puis apertement.<lb/> Ou vintieme an de mon aage,<lb/> Ou point qu'Amours prent le paage<lb/> Des genes gens, couchiez
+									m'estoie<lb/> Une nuit, si com je souloie,<lb/> Et me dormoie mout forment,<lb/> Si vi .I. songe en mon dorment<lb/> Qui mout fu biaus et mout me plot;</incipit>
+							</msItem>
+							<msItem>
+								<locus from="1r">fol. 1b</locus>
+								<quote rend="dots-after"> Mais en cel songe onques riens n'ot<lb/> Qui avenu trestout ne soit<lb/> Si con li contes racontoit.<lb/> Or vueil ce songe rimoier<lb/> Por vos cuers plus fere esgaier,<lb/> Qu'Amors le me prie et-commande;<lb/> Que se nus ne nule demande<lb/> Comment je vueil que cist rommans<lb/> Soit apelé que je commans,<lb/> Ce est li Rommans de la Rose<lb/> Ou l'art d'Amours est toute enclose.<lb/> La matiere en est bone et neuve,<lb/> Or doinst
+									Dieus qu'en la receuve<lb/> Cele pour qui je l'ai empris.<lb/> Et tant est digne d'estre amee<lb/> Qu'el doit estre rose clamee.<lb/> Avis m'iert que il estoit mays,<lb/> Il a bien .I. an et .V. mais,<lb/> Que ou mois de may je songoie<lb/> El tens amoureus, plain de joie,<lb/> Ou tens ou toute riens s'esgaie,<lb/> Que il n'est ne buisson ne haie<lb/> Qui en may parer ne se vueille<lb/> Et couvrir de nouvele fueille </quote>
+							</msItem>
+							<msItem>
+								<locus from="138r">fol. 138a</locus>
+								<note>Fin</note>
+								<explicit>
+									<gap reason="sampling"/>Quant en si haut degré me vi,<lb/> Que j'oi si noblement chevi<lb/> Que mes procés n'iert mes doutable,<lb/> Por ce que fins et agraable<lb/> Fusse vers touz mes bienfaiteurs,<lb/> Si com doit fere bons deteurs,<lb/> Car mout estoie a eus tenus<lb/> Quant par eus iere dveenus<lb/> Si riche, et por voir l'afiche,<lb/> Que Richece n'iert pas si riche,<lb/> Au dieu d'amors et a Venus,<lb/> Qui m'orent aidié miex que nus,<lb/> Puis a touz
+									les barons de l'ost,<lb/> Dont je pri Dieu que ja ne l'ost</explicit>
+							</msItem>
+							<msItem>
+								<locus from="138r">fol. 138b</locus>
+								<explicit>Des secors as fins amoreus,<lb/> Entre les baisiers savoureus<lb/> Rendi graces .X. fois ou .XX..<lb/> Mes de Reson ne me souvint,<lb/> Qui tant en moi gasta de paine.<lb/> Maugré Richece la vilaine,<lb/> Qui onques de pitié n'usa,<lb/> Quant l'entree me refusa<lb/> Du senteret qu'ele gardoit<lb/> -De cestui pas ne se gardoit<lb/> Par ou je suis ceans venus<lb/> Repostement, les sauz menus -<lb/> Maugré mes mortiex anemis,<lb/> Qui tant m'orent arriere
+									mis,<lb/> Especiaument Jalousie<lb/> Et tout son chapel de sousie,<lb/> Qui des amans les roses garde<lb/> (Mout en fet ore bone garde !),<lb/> Ainz que d'ilec me remuasse<lb/> Ou, mon vueil, encor demorasse,<lb/> Par grant joliveté cueilli<lb/> La flour du biau rosier fueilli.<lb/> Ainsint oi la rose vermeille.<lb/> A tant fu jour, et je m'esveille.</explicit>
+								<lb/>
+								<finalRubric>Explicit iste liber, scriptor sit crimine liber. Amen.</finalRubric>
+							</msItem>
+						</msItem>
+						<msItem>
+							<note>Le feuillet <locus from="138v">138v°</locus> est blanc.</note>
+						</msItem>
+						<msItem>
+							<note>Au <locus from="N2">v° du dernier feuillet de garde</locus> en parchemin (écriture cursive du XIVᵉ ou XVᵉ siècle): <quote>Fleur fruit et fest feulle, escorce et racine.</quote>
+							</note>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc form="codex">
+							<supportDesc material="perg">
+								<support>
+									<p>Parchemin</p>
+									<p>Deux feuillets de garde en <material>papier</material>, contemporains de la reliure, au début et à la fin. Deux feuillets de garde au début, un feuillet de garde à la fin en <material>parchemin</material>, contemporains du manuscrit.</p>
+								</support>
+								<extent>
+									<measure type="leavesCount" n="IV + 137 + III">IV + 137 + III feuillets</measure>
+									<measure type="pageDimensions" n="26.3 x 17.6 cm">263 x 176 mm</measure>
+								</extent>
+								<foliation>Foliotation contemporaine du manuscrit, en chiffres romains, souvent très effacée, parfois absente.</foliation>
+								<collation>Tableau des cahiers: <table>
+										<row>
+											<cell>N° d'ordre</cell>
+											<cell>Feuillets</cell>
+											<cell>Composition</cell>
+											<cell><catchwords>Réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>1</cell>
+											<cell>
+												<locus from="1r" to="4r">1-4</locus>
+											</cell>
+											<cell>2-2</cell>
+											<cell>sans</cell>
+										</row>
+										<row>
+											<cell>2</cell>
+											<cell>
+												<locus from="5r" to="8r">5-8</locus>
+											</cell>
+											<cell>2-2</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>3</cell>
+											<cell>
+												<locus from="9r" to="16r">9-16</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell>trace</cell>
+										</row>
+										<row>
+											<cell>4</cell>
+											<cell>
+												<locus from="17r" to="24r">17-24</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell>sans</cell>
+										</row>
+										<row>
+											<cell>5</cell>
+											<cell>
+												<locus from="25r" to="32r">25-32</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell>sans</cell>
+										</row>
+										<row>
+											<cell>6</cell>
+											<cell>
+												<locus from="33r" to="40r">33-40</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell>sans</cell>
+										</row>
+										<row>
+											<cell>7</cell>
+											<cell>
+												<locus from="41r" to="48r">41-48</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>8</cell>
+											<cell>
+												<locus from="49r" to="56r">49-56</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>9</cell>
+											<cell>
+												<locus from="57r" to="64r">57-64</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>10</cell>
+											<cell>
+												<locus from="65r" to="72r">65-72</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>11</cell>
+											<cell>
+												<locus from="73r" to="80r">73-80</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>12</cell>
+											<cell>
+												<locus from="81r" to="88r">81-88</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>13</cell>
+											<cell>
+												<locus from="89r" to="96r">89-96</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell>sans</cell>
+										</row>
+										<row>
+											<cell>14</cell>
+											<cell>
+												<locus from="97r" to="104r">97-104</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>15</cell>
+											<cell>
+												<locus from="105r" to="110r">105-110</locus>
+											</cell>
+											<cell>3-3</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>16</cell>
+											<cell>
+												<locus from="111r" to="118r">111-118</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell><catchwords>réclame</catchwords></cell>
+										</row>
+										<row>
+											<cell>17</cell>
+											<cell>
+												<locus from="119r" to="126r">119-126</locus>
+											</cell>
+											<cell>4-4</cell>
+											<cell>sans</cell>
+										</row>
+										<row>
+											<cell>18</cell>
+											<cell>
+												<locus from="127r" to="138r">127-138</locus>
+											</cell>
+											<cell>6-6</cell>
+											<cell>sans</cell>
+										</row>
+									</table>
+								</collation>
+							</supportDesc>
+							<layoutDesc>
+								<layout columns="2" writtenLines="40">Justification: <measure type="written">189 x 130 mm</measure>. Texte sur deux colonnes; 40 lignes par colonne. Réglure à la mine de plomb.</layout>
+							</layoutDesc>
+						</objectDesc>
+						<handDesc hands="1">
+							<handNote script="gotica">Ecriture gothique. Une seule main.</handNote>
+						</handDesc>
+						<decoDesc>
+							<decoNote type="title">Titres rubriqués.</decoNote>
+							<decoNote type="initial">
+								<term>Initiales</term> (2 lignes) alternativement bleues et rouges à filigranes et prolongements de la couleur opposée.</decoNote>
+							<decoNote type="initial">Au <locus from="1r">fol. 1</locus>, une initiale (4 lignes) bleue sur fond rouge rehaussé d'or et une initiale (2 lignes) rouge sur fond bleu rehaussé d'or, à prolongements bleus et rouges, ornés d'animaux (oiseaux, lièvres, cerf, lévrier) et se terminant par des feuilles de vigne.</decoNote>
+							<decoNote type="illustration">22 peintures à dominante bleu et rouge rehaussées d'or (taille variable, env. 60 x 45 mm).</decoNote>
+						</decoDesc>
+						<bindingDesc>
+							<binding contemporary="false" notBefore="1700" notAfter="1799">
+								<p>Reliure du <date>XVIIIᵉ siècle</date> en <locus from="Vorderseite">maroquin rouge</locus> à filet doré. <locus from="Schliessenseite">Tranches</locus> dorées.</p>
+							</binding>
+						</bindingDesc>
+					</physDesc>
+					<history>
+						<provenance>
+							<p>1) <persName role="former_possessor">J. B. Denis Guyon de Sardière</persName>. (Au <locus from="V5">r° du premier feuillet de garde</locus> et au <locus from="138r">fol. 138</locus>: « Guyon de Sardière ».)<lb/> Cf. <bibl>
+									<hi rend="italic">Catalogue des livres de la Bibliothèque de feu M. J. B. Denis Guyon chev. seigneur de Sardiere<gap/>
+									</hi>, Paris, 1759, n° 528, pp. 54-55</bibl>: « Li Rommans de la Rose, ou l'Art d'Amour est toute enclose, par Guill. de Lorris et Jehan de Meung, dit Clopinel. Ms. sur velin, in fol. rel. antiq. »<lb/> et <bibl>« Eclaircissemens », p. IX</bibl>: « On lit a la premiere page, qu'il est de l'an 1308<gap/> l'écriture en est assez belle; et a la fin de l'ouvrage le copiste a mis ce vers: Explicit iste liber, scriptor sit crimine liber. Amen. Les miniatures n'ont
+								que le mérite de l'antiquité; il parroit avoir appartenu à François I; car sur le plat de la couverture, on voit d'un coté un portrait de ce Roi, avec cette inscription, <hi rend="small-caps">F. Rex</hi>, et de l'autre celui de Didon, Dido<gap/> » (cet ex-libris a aujourd'hui disparu).<note place="foot">Cf. aussi, <bibl>E. <hi rend="small-caps">Langlois</hi>, <hi rend="italic">Les manuscrits du Roman de la Rose. Description et classement</hi>
+										<gap/> (<hi rend="italic">Travaux et mémoires de l'Université de Lille, Nouvelle Série. I. Droit, Lettres</hi>, Vol. 7), Lille, Paris, 1910, p. 162 note 4</bibl>.</note>
+							</p>
+							<p>2) <persName role="former_possessor">Suchtelen</persName> (XIXᵉ siècle). Au <locus from="1r">fol. 1</locus>, tampon « <orgName>Bibliotheca Suchtelen</orgName> »; au <locus from="Vorderseite">plat intérieur</locus> de la reliure « ex-libris Bibliotheca Suchtelen » avec blason et devise « Aequa Mente ». Vente, 1836.</p>
+							<p>3) Au <locus from="1r">fol. 1</locus>, on trouve les traces illisibles d'un tampon de bibliothèque en caractères cyrilliques et au <locus from="Vordere_Innenseite">plat intérieur</locus> de la reliure un ex-libris avec les mêmes caractères, mais si la plus grande partie de la collection Suchtelen est entrée à la bibliothèque publique de Leningrad, aucun des manuscrits du Roman de la Rose signalés à Leningrad ne semble correspondre à celui-ci.</p>
+							<p>Autres mentions qui n'ont pu être identifiées:<lb/> au <locus from="V2">v° du premier feuillet de garde</locus> signature (écriture du XVIIIᵉ siècle): « F. Mayer Constanten. »;<lb/> au <locus from="1r">fol. 1</locus>, numéro 7769 barré au crayon et remplacé par 3370;<lb/> au <locus from="Vorderseite">plat intérieur</locus> de la reliure ex-libris arraché sous lequel on distingue un autre ex-libris portant le numéro 2154.</p>
+						</provenance>
+						<acquisition>
+							<p>4) Acquis par <persName role="former_possessor" key="pnd_116216387">Martin Bodmer</persName> en <date>1935</date>.</p>
+						</acquisition>
+					</history>
+					<additional>
+						<adminInfo>
+							<recordHist>
+								<source>
+									<bibl><persName>Vielliard Françoise</persName>, Manuscrits Français du Moyen Âge, Cologny-Genève, <date>1975</date>, pp. 153-156.</bibl>
+								</source>
+							</recordHist>
+						</adminInfo>
+						<listBibl>
+							<bibl>Félix <hi rend="small-caps">Lecoy</hi>, <hi rend="italic">Guillaume de Lorris et Jean de Meun. Le roman de la Rose …</hi> (<hi rend="italic">Classiques français du Moyen Âge, 92, 95, 98</hi>), Paris, 1969-1970, 3 vol.</bibl>
+							<bibl>Voir PI. 16.</bibl>
+						</listBibl>
+					</additional>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<!--revisionDesc>
          <change who="Maria:Revision" date="15.02.2013"></change>
-         </revisionDesc-->   
-   </teiHeader>
-   <text>
-      <body>
-         <p/>
-      </body>
-   </text>
+         </revisionDesc-->
+	</teiHeader>
+	<text>
+		<body>
+			<p/>
+		</body>
+	</text>
 </TEI>
