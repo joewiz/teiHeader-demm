@@ -5,38 +5,38 @@ Once your instance of oXygen editor is open and ready:
 - Go to file > "New Document" and select "Document XML"
 - this should open a blank file with just an xml declaration looking like:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 TEI files start either with a TEI element or a teiCorpus element. 
-You must add the TEI namespace attribute to that root element to identify the vocabulary of xml elements your using. If you were to use some non TEI elements, you would indicate the vocabulary the belong to as well, so that every thing is clear.
+You must add the TEI namespace attribute to that root element to identify the vocabulary of xml elements you're using. If you were to use some non-TEI elements, you would indicate the vocabulary they belong to as well, so that everything is clear.
 The attribute and its value are:
 
-```
+```xml
 xmlns="http://www.tei-c.org/ns/1.0"
 ```
 If you add a few blank lines between the start and the end tag, here's what your file should look like:
 
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">	
 	
 </TEI>
 ```
-Being pre-package with TEI knowledge and dedicated tool, oXygen can tell you if your file is valid or not. 
-You'll know that every thing is OK looking at the color of a square at the right of the editing window. 
+Being pre-packaged with TEI knowledge and a dedicated XML editing tool, oXygen can tell you if your file is valid or not. 
+You'll know that every thing is OK by looking at the color of a square at the right of the editing window. 
 When it's red, it means you've got to fix something, like some element is missing in the hierarchy or some others can't be placed there.
 There's a message at the bottom of the editing pane that tells you what the problem is.
 
 Now to get a green square, you will add the elements necessary to get a minimal tei valid document.
-- clic inside the TEI root element and just put type an angle braquet '<'
+- click inside the TEI root element and just put type an angle bracket '<'
 - oXygen opens a box showing possible elements in that context: choose 'teiHeader'
 - observe that the editor inserted the minimal elements of a teiHeader
 
 The result should look like:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
@@ -56,13 +56,13 @@ You don't have your green square yet, as other mandatory components are missing.
 Start by adding a title and some information in the 'publicationStmt' and 'sourceDesc' element using the same method you used for inserting the teiHeader:
 
 - insert an angle bracket
-- choose a sub element looking at contextual information oXygen provides
+- choose a sub-element looking at contextual information oXygen provides
 
 Then add a text element and continue to add sub elements until the minimal TEI document is valid.
 
-The result, depending on the sub elements you chose, should look like:
+The result, depending on the sub-elements you chose, should look like:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
@@ -92,7 +92,7 @@ Don't forget to save your work!
 There are many ways in which you can enhance the header and add useful information in it. 
 Of course, your choices in that area will depend on the information already available to you, 
 but it shall also be determined by the operations you will want to process on your TEI text 
-(html display for a reading version vs structured search within the fields of a multifaceted search engine, 
+(e.g., html display for a reading version vs. structured search within the fields of a multifaceted search engine, 
 The choices you have to make come under two main categories:
 
 - the level of precision you need (cursory vs detailed)
@@ -119,19 +119,19 @@ The choices you have to make come under two main categories:
 `<biblStruct>` (the same but with an constrained order for the contained elements) or a `<msDesc>` if your source is a manuscript (or a text bearing object).
 
 
-```
+```xml
 <sourceDesc>
   <p>No source: this is an original work</p>
 </sourceDesc>
 ```
 
-```
+```xml
 <sourceDesc>
 <p>Transcribed directly from the first edition of <title>Harry Potter</title> </p>
 </sourceDesc>
 ```
 
-```
+```xml
 <sourceDesc>
  <scriptStmt xml:id="CNN12">
   <bibl>
@@ -143,8 +143,7 @@ The choices you have to make come under two main categories:
 </sourceDesc>
 ```
 
-
-```
+```xml
 <sourceDesc>
    <biblStruct>
     <monogr>
@@ -159,12 +158,13 @@ The choices you have to make come under two main categories:
    </biblStruct>
   </sourceDesc>
 ```
+
 ### Description of the Encoding (`<encodingDesc>`)
-- after the fileDesc element, insert an `<encodingDesc>` element, then:
-- a `<projectDesc>` and `<p>` to describe your project goal 
+- after the `<fileDesc>` element, insert an `<encodingDesc>` element, then:
+- a `<projectDesc>` and `<p>` element to describe your project goal 
 - an `<editorialDecl>` with a `<normalization>` element indicating the extent of standardization or regularization of the source carried out in the transcription process.
 
-```
+```xml
 <editorialDecl>
  <normalization>
   <p>All words converted to Modern American spelling using
@@ -196,7 +196,7 @@ It may contain anything except TEI elements.
 
 Example combining RDF statements and Dublin Core properties:
 
-```
+```xml
 <xenoData>
  <rdf:RDF>
   <cc:Work rdf:about="">
